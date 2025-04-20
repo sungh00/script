@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>새로 고침해 보세요</p>
+  <script>
+    function random(number) {
+      return Math.floor(Math.random() * number);
+    } // random 함수 안에 number라는 매개변수 작성, 
+     // Math.floor가 숫자들이랑 random번호를 곱해서 무작위 색깔을 return해줌
+
+    function bgChange() {
+      const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+      document.body.style.backgroundColor = rndCol;
+    } // bgChange라는 함수 선언 하고 body요소안에 있는 backgroundColor를 rndCol라고 지정해놓고 rndCol가 255가지 rgb컬러를 낼 수 있는 코드 작성
+   bgChange(); // bgChange() = 매개변수 함수니까 실햄 함수 작성해줘야함
+  </script>
+</body>
+</html>
